@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Flowerfelt birthday greeting for Gudiya with animations and photos.">
+  <meta name="keywords" content="birthday, greeting, brother, love, sister">
+  <title>Happy Birthday Laxmi ❤️ by Kush</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="countdown.mp3" as="audio">
+  <link rel="preload" href="birthday.mp3" as="audio">
+  <link rel="preload" href="photos.mp3" as="audio">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #ffccd5; display: flex; justify-content: center; align-items: center; z-index: 2000; transition: opacity 0.5s;">
+    <div style="font-family: 'Dancing Script', cursive; font-size: 2rem; color: white;"> Loading Special Birthday Wishes...❤️✨</div>
+  </div>
+
+  <div id="countdown" class="page countdown-page">
+    <div class="countdown-number">10</div>
+    <div class="sparkle-container"></div>
+    <div class="floating-elements"></div>
+  </div>
+
+  <div id="page1" class="page page1">
+    <div class="floating-elements"></div>
+    <h1>Happy Birthday My Gudiya ❤️</h1>
+    <h1> </h1>
+    <div class="cake-container">
+      <div class="birthday-cake">
+        <div class="cake">
+          <div class="cake-top"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+          <div class="cake-text">05/02/25</div>
+        </div>
+        <div class="cake-plate"></div>
+        <div class="candle candle1"><div class="flame"></div></div>
+        <div class="candle candle2"><div class="flame"></div></div>
+        <div class="candle candle3"><div class="flame"></div></div>
+      </div>
+    </div>
+    <p class="subtitle">You are the beat of my Heart and my Life<br>Many many happy returns of this day</p>
+    <button class="next-button" onclick="showPage(2)" aria-label="Go to Letter Page">Click Here</button>
+  </div>
+
+  <div id="page2" class="page page2">
+    <div class="confetti-container"></div>
+    <div class="floating-elements"></div>
+    <div class="letter-container">
+      <h2>My Dearest Sister❤️,</h2>
+      <p>To My Gudiya,
+Tere hone se meri duniya roshan hai, bina kahe tu sab keh jaati hai... my love for you isn’t the kind they write filmon mein, it’s deeper than most would understand. It's not one-sided—it's just silent. It's the kind a brother carries in his Heartbeat, a love jisme sirf duayein hoti hain, khwahishen nahi. I see your dreams shining for someone else, and still, to every god, har raat ke sukoon mein, I pray:
+“Meri Gudiya ko har woh khushi mile jo uska dil maange—even if uss khushi mein mera koi naam na ho.”</p>
+<p>
+Tere chhote chhote replies kabhi dil ko chubhte hain, but main unhe apne dil ke locker mein rakh leta hoon—jaise bacha hua toffee ka tukda jo sirf kisi khaas ke liye sambhal ke rakha ho.
+<p> Hamari purani chats mere liye bas texts nahi, yaadon ke mausam hain—main unme jee leta hoon jab tu door hoti hai. Hamesha tujhe izzat, samajh, aur duaon mein rakhunga—na kabhi shikayat karunga, na kabhi peeche hatunga. har khushi, har himmat sirf isliye hai kyunki tu hai.</p>
+      <p class="signature">Forever Your Brother,<br>Kushal Kumar J The Great!</p>
+    </div>
+    <button class="next-button" onclick="showPage(3)" aria-label="Go to Photo Gallery">Click Here</button>
+  </div>
+
+  <div id="page3" class="page page3">
+    <div class="floating-elements"></div>
+    <h2>The Hall of Memories</h2>
+    <div class="photo-gallery">
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+        <img src="pic6.jpg" alt="Memory 1" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+1';">
+        <div class="photo-caption">Shared Smiles🏵️</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+        <img src="pic2.jpg" alt="Memory 2" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+2';">
+        <div class="photo-caption">Forever Memories✨</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+        <img src="pic3.jpg" alt="Memory 3" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+3';">
+        <div class="photo-caption">Joyful Times❤️</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+        <img src="pic4.jpg" alt="Memory 4" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+4';">
+        <div class="photo-caption">Furry🎉</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+       <img src="pic5.jpg" alt="Memory 5" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+5';">
+        <div class="photo-caption">Party Night Vibes🥳</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+       <img src="pic1.jpg" alt="Memory 6" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+6';">
+        <div class="photo-caption">Cuteness at its peak🌸</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+       <img src="pic7.jpg" alt="Memory 7" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+7';">
+        <div class="photo-caption">Beautiful Day❤️</div>
+      </div>
+    </div>
+    <button class="next-button" onclick="showPage(1)" aria-label="Start Over">Start Again</button>
+  </div>
+
+  <button class="music-toggle" onclick="toggleMusic()" aria-label="Toggle Music">🔊 Music ON</button>
+
+
+  <audio id="countdown-music" loop>
+    <source src="countdown.mp3" type="audio/mpeg">
+    <source src="countdown.ogg" type="audio/ogg">
+  </audio>
+  <audio id="birthday-music" loop>
+    <source src="Happy Birthday Music.mp3" type="audio/mpeg">
+    <source src="Happy Birthday Music.ogg" type="audio/ogg">
+  </audio>
+
+  <audio id="photo-music" loop>
+    <source src="Photo.mp3" type="audio/mpeg">
+    <source src="Photo.ogg" type="audio/ogg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
